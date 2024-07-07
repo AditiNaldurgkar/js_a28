@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>String comparator</title>
     <style>
+        h1{
+            text-align: center;
+            font-style: italic;
+            color: #6E260E;
+        }
         .container{
             background-color: #800020;
-            height: 400px;
-            width: 500px;
+            height: 300px;
+            width: 400px;
             display: block;
             margin: 20px auto;;
             font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -24,7 +29,7 @@
             background-color: 	#EADDCA;
             display: block;
             margin: 10px auto;
-            width: 200px;
+            width: 250px;
             padding: 10px;
         }
     </style>
@@ -41,7 +46,7 @@
             function compare(){
                 t1=document.getElementById("ip1").value
                 t2=document.getElementById("ip2").value
-                ans=document.getElementById("answer").value
+                ans=document.getElementById("answer")
                 if (t1 ==t2) {
                     ans.innerText=`The strings are identical`
                 }
