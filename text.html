@@ -33,10 +33,23 @@
     <h1>String comparator</h1>
     <div class="container">
         Enter string one :  
-        <input type="text" class="ip"><br/>
+        <input type="text" class="ip" onkeyup="compare()" id="ip1"><br/>
         Enter string two :
-        <input type="text" class="ip"><br/>
-        <span>The strings are </span>
+        <input type="text" class="ip" onkeyup="compare()" id="ip2"><br/>
+        <span id="answer">The strings are  </span>
+        <script>
+            function compare(){
+                t1=document.getElementById("ip1").value
+                t2=document.getElementById("ip2").value
+                ans=document.getElementById("answer").value
+                if (t1 ==t2) {
+                    ans.innerText=`The strings are identical`
+                }
+                else {
+                    ans.innerText=`The strings are  not identical`
+                }
+            }
+        </script>
     </div>
 </body>
 </html>
